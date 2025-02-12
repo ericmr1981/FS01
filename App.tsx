@@ -1,7 +1,14 @@
 import './App.css';
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { bitable } from '@lark-base-open/connector-api';
 import { Button, Form, Input } from 'antd';
+
+// 定义配置项接口
+interface ConfigType {
+    'config-item-1': string;
+    'config-item-2': string;
+}
 
 export default function App() {
     const [value, setValue] = useState('');
@@ -24,7 +31,7 @@ export default function App() {
         })
     }, [])
 
-    const handleSaveConfig = (config) => {
+    const handleSaveConfig = (config: ConfigType) => {
         console.log('config', config)
         bitable.saveConfigAndGoNext(config)
     }

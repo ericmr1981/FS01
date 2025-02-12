@@ -12,16 +12,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.7.4",
+    "typescript": "^5.0.0",
     "vite": "^3.0.4"
   },
   "dependencies": {
-    "@lark-base-open/connector-api": "^0.1.0",
-    "antd": "^5.14.2"
+    "@lark-base-open/connector-api": "latest",
+    "antd": "^5.0.0"
   }
 }
